@@ -141,6 +141,7 @@ IrredNet/
 ├── third_party/        # Attribution and license notices
 ├── pyproject.toml
 ├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 
@@ -149,3 +150,9 @@ IrredNet/
 IrredNet uses PyTorch, e3nn, PyTorch Geometric, spglib, and spgrep, with crystal
 utilities from pymatgen, ASE, and JARVIS-tools. Attribution for reused backbone
 utilities is provided in [third_party/README.md](third_party/README.md).
+
+## License
+
+The original IrredNet code is released under the [MIT License](LICENSE).
+Third-party code and dependencies retain their respective licenses and
+[attribution notices](third_party/README.md).

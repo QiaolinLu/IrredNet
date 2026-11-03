@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77.0.3", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,6 +7,8 @@ name = "irrednet-spacegroup"
 version = "0.1.0"
 description = "IrredNet equivariant prediction of space-group-allowed material tensor coefficients"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "third_party/MACE_LICENSE.md"]
 requires-python = ">=3.11"
 dynamic = ["dependencies"]
 
@@ -30,4 +32,3 @@ exclude = ["tests*"]
 
 [tool.setuptools]
 include-package-data = false
-license-files = ["third_party/MACE_LICENSE.md"]
