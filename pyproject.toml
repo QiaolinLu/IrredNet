@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "irrednet-spacegroup"
+version = "0.1.0"
+description = "IrredNet equivariant prediction of space-group-allowed material tensor coefficients"
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[project.urls]
+Repository = "https://github.com/QiaolinLu/IrredNet"
+Documentation = "https://github.com/QiaolinLu/IrredNet#readme"
+
+[project.scripts]
+irrednet-train = "irrednet.train:main"
+irrednet-predict = "irrednet.predict:main"
+irrednet-evaluate = "irrednet.evaluate_run:main"
+irrednet-decompose = "irrednet.report:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["irrednet*"]
+exclude = ["tests*"]
+
+[tool.setuptools]
+include-package-data = false
+license-files = ["third_party/MACE_LICENSE.md"]

@@ -1,0 +1,14 @@
+# Direct dependencies for the reference environment.
+# Install torch and a matching torch-scatter wheel first; see README.md.
+torch==2.10.0
+torch-scatter==2.1.2
+torch-geometric==2.7.0
+e3nn==0.6.0
+numpy==2.4.3
+scipy==1.17.1
+pymatgen==2025.10.7
+spglib==2.7.0
+spgrep==0.3.8
+ase==3.28.0
+jarvis-tools==2026.1.10
+scikit-learn==1.8.0
